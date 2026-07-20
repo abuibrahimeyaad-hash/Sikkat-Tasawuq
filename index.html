@@ -493,3 +493,12 @@
 </body>
 </html>
 
+<!-- كود ربط التطبيق الآمن في نهاية الملف -->
+<script>
+  (function() {
+    var link = document.createElement('link');
+    link.rel = 'manifest';
+    link.href = 'manifest.json';
+    document.head.appendChild(link);
+  })();
+</script>
